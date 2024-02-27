@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>4 in a Row</title>
+</head>
+<body>
+    <div class="container">
+        <div class="right">
+            <div class="right-content">
+                <img src="/assets/images/robot1.png" alt="robot" height="300" style="margin-left: 5em;">
+                <h2 class="main-title">You Outperformed Robot 35!</h2>
+                <div id="playAgain"> 
+                    <h3 class="main-subtitle" style="display: inline-block; margin-right: 3em;">Wanna play again?</h3>
+                    <a class="main-subtitle" style="display: inline-block; margin-right: 3em;" href="https://aws-hosting.d254ocmyajhna0.amplifyapp.com/AWS%20Experiment/index.html">Yes</a>
+                    <a class="main-subtitle" style="display: inline-block;" onclick="showDiv()">No</a>
+                </div>
+                <div id="humans" style="display: none;">
+                    <h3 class="main-subtitle" id="repeat" style="margin-bottom: 2em;">Wanna know how well you performed compared to other humans?</h3>
+                    <a class="start" id="questions" style="margin-right: 4em; padding: 0.5em; background-color: white; border: solid black 1px; color: black;" onclick="loadQuestions()"> Fill in the Form and Get the results</a>
+                    <a class="start" id="sayNo" style="padding: 0.5em; background-color: white; border: solid black 1px; color: black;"> No Thanks</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" id="form">
+                <form>
+                    <div>
+                      <label for="fname">Age:</label>
+                      <input type="number" id="fname"  name="age" placeholder="Type Your Age" required>
+                      <br>
+                      <label for="gender" class="control-label">I identify as:</label> 
+                      <select name="geners" id="gender"> 
+                          <option value="null">Select One</option> 
+                          <option value="male">Male</option> 
+                          <option value="Female">Female</option> 
+                          <option value="Non-Binary">Non-Binary</option> 
+                      </select>
+                      <br>
+                      <label for="location" class="control-label">Location</label>
+                      <input type="text" id="location" name="location">
+                      <br>
+                      <label for="job" class="control-label">Does your job involve strategic decision making?</label>
+                      <div class="switch-field">
+                        <input type="radio" id="radio-one" name="switch-one" value="yes"/>
+                        <label for="radio-one" id="radio1">Yes</label>
+                        <input type="radio" id="radio-two" name="switch-one" value="no" />
+                        <label for="radio-two" id="radio2">No</label>
+                      </div>
+                      <br>
+                      <label for="experience" class=" col-sm-3 control-label control-label">Are you trained in strategic decision making as part of your education?</label>
+                      <div class="switch-field">
+                        <input type="radio" id="radiounos" name="switch-two" value="yes"/>
+                        <label for="radiounos" id="radiouno">Yes</label>
+                        <input type="radio" id="radiodeuss" name="switch-two" value="no" />
+                        <label for="radiodeuss" id="radiodeus">No</label>
+                      </div>
+                      <br>
+                    </div>
+                    <input type="submit" value="Submit">
+                  </form>
+        </div>
+    </div>
+    <script>
+        function loadQuestions() {
+            document.getElementById("form").style.display = "block";
+            document.getElementById("sayNo").style.display = "none";
+            document.getElementById("questions").style.display = "none";
+            document.getElementById("repeat").style.display = "none";
+
+        }
+        function showDiv() {
+            document.getElementById("humans").style.display = "block";
+            document.getElementById("playAgain").style.display = "none";
+
+        }
+    </script>
+</body>
+</html>
