@@ -24,6 +24,8 @@ body {
 .right-content {
     justify-self: start;
     align-self: center; 
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
 }
 
 .left {
@@ -117,7 +119,20 @@ body {
 	background-color: rgb(168, 169, 223);
 }
 
-
+.slider label {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Open Sans;
+    padding-left: 10px;
+    color: black;
+}
+.slider input[type="range"] {
+    width: 420px;
+    height: 2px;
+    background: black;
+    border: none;
+    outline: none;
+}
 /* form starting stylings ------------------------------- */
 /* 
   input {

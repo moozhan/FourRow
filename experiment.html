@@ -14,7 +14,7 @@
                 <h2 class="main-title">You Outperformed Robot 35!</h2>
                 <div id="playAgain"> 
                     <h3 class="main-subtitle" style="display: inline-block; margin-right: 3em;">Wanna play again?</h3>
-                    <a class="main-subtitle" style="display: inline-block; margin-right: 3em;" href="https://aws-hosting.d254ocmyajhna0.amplifyapp.com/AWS%20Experiment/index.html">Yes</a>
+                    <a class="main-subtitle" style="display: inline-block; margin-right: 3em;" href="https://dev.d254ocmyajhna0.amplifyapp.com/AWS%20Experiment/index.html">Yes</a>
                     <a class="main-subtitle" style="display: inline-block;" onclick="showDiv()">No</a>
                 </div>
                 <div id="humans" style="display: none;">
@@ -24,30 +24,41 @@
                 </div>
             </div>
         </div>
-        <div style="display: none;" id="form">
+        <div style="display: none;" id="form" class="right-content">
                 <form>
                     <div>
-                      <label for="fname">Age:</label>
-                      <input type="number" id="fname"  name="age" placeholder="Type Your Age" required>
-                      <br>
-                      <label for="gender" class="control-label">I identify as:</label> 
-                      <select name="geners" id="gender"> 
-                          <option value="null">Select One</option> 
-                          <option value="male">Male</option> 
-                          <option value="Female">Female</option> 
-                          <option value="Non-Binary">Non-Binary</option> 
-                      </select>
-                      <br>
-                      <label for="location" class="control-label">Location</label>
-                      <input type="text" id="location" name="location">
-                      <br>
-                      <label for="job" class="control-label">Does your job involve strategic decision making?</label>
-                      <div class="switch-field">
-                        <input type="radio" id="radio-one" name="switch-one" value="yes"/>
-                        <label for="radio-one" id="radio1">Yes</label>
-                        <input type="radio" id="radio-two" name="switch-one" value="no" />
-                        <label for="radio-two" id="radio2">No</label>
+                      <div style="display: grid; justify-content: space-around;   grid-template-columns: 1fr 1fr;">
+                            <label for="fname">Age:</label>
+                            <input type="number" id="fname"  style= "width: 200px;" name="age" placeholder="Type Your Age" required>
+                      <div>
+                      <div style="display: grid; justify-content: space-around;   grid-template-columns: 1fr 1fr;">
+
+                            <label for="gender" class="control-label">I identify as:</label> 
+                            <select name="geners" id="gender"> 
+                                <option value="null">Select One</option> 
+                                <option value="male">Male</option> 
+                                <option value="Female">Female</option> 
+                                <option value="Non-Binary">Non-Binary</option> 
+                            </select>
                       </div>
+                      <br>
+                      <div style="display: grid; justify-content: space-around;   grid-template-columns: 1fr 1fr;">
+
+                            <label for="location" class="control-label">Location</label>
+                            <input type="text" id="location" name="location">
+                      </div>
+
+                      <br>
+                      <div style="display: grid; justify-content: space-around;   grid-template-columns: 1fr 1fr;">
+
+                            <label for="job" class="control-label">Does your job involve strategic decision making?</label>
+                            <div class="switch-field">
+                                <input type="radio" id="radio-one" name="switch-one" value="yes"/>
+                                <label for="radio-one" id="radio1">Yes</label>
+                                <input type="radio" id="radio-two" name="switch-one" value="no" />
+                                <label for="radio-two" id="radio2">No</label>
+                            </div>
+                    </div>
                       <br>
                       <label for="experience" class=" col-sm-3 control-label control-label">Are you trained in strategic decision making as part of your education?</label>
                       <div class="switch-field">
@@ -58,6 +69,45 @@
                       </div>
                       <br>
                     </div>
+                    <div>
+                        <div style="display: grid; justify-content: space-around;   grid-template-columns: 1fr 1fr;">
+
+                        <label for="fader">This is a long question with slider answer: </label>
+                        <input type="range" style="width: 80%;" min="0" max="100" value="50" id="fader" step="20" list="volsettings">
+                            <datalist id="volsettings">
+                            <option>-2</option>
+                            <option>-1</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            </datalist>
+                        </div>
+                      </div>
+                      <br>
+                      <div>
+                        <label for="fader">This is a long question with slider answer: </label>
+                        <input type="range" min="0" style="width: 80%;" max="100" value="50" id="fader" step="20" list="volsettings">
+                        <datalist id="volsettings">
+                            <option>-2</option>
+                            <option>-1</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </datalist>
+                      </div>
+                      <br>
+                      <div>
+                        <label for="fader">This is a long question with slider answer:  </label>
+                        <input type="range" style="width: 80%;" min="0" max="100" value="50" id="fader" step="20" list="volsettings">
+                        <datalist id="volsettings">
+                            <option>-2</option>
+                            <option>-1</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </datalist>
+                      </div>
+                      <br>
                     <input type="submit" value="Submit">
                   </form>
         </div>
