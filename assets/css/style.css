@@ -64,7 +64,6 @@ body {
 
 /*Radio Buttons*/
 .switch-field {
-	display: inline-block;
 	overflow: hidden;
 }
 
