@@ -9,9 +9,14 @@ body {
     top: 0px !important; 
 }
 
-.container {
+.index-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 95%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 0.40fr 0.60fr;
     height: 95%;
 }
 
