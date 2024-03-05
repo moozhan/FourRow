@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>4 in a Row</title>
+</head>
+<body style="height: 100%;">
+    <div class="all-page">
+        <div style="background-image: url(assets/images/background.png); height: 21vh; width: 100%; margin-bottom: 20vh; position: fixed; top: 0;"></div>
+
+        <div style=" padding-right: 2em; margin-top: 15em; width: 70%;" id="form" class="right-content">
+            <h1>Indecision Questionnaire</h1>
+            <h3>This will be explanation of the questionnaire and how to respond to the qusetions. </h3>
+            <br>
+
+            <form>
+                <div style="width: 100%;">
+                  <div style="display: grid; justify-content: space-around;   grid-template-columns: 1fr 1fr;">
+                        <label for="fader">This is a long question with slider answer: </label>
+                        <input type="range" style="width: 80%; margin-bottom: 1em;" min="0" max="100" value="50" id="fader" step="20" list="volsettings">
+                            <datalist id="volsettings">
+                            <option>-2</option>
+                            <option>-1</option>
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            </datalist>
+                    <label for="fader">This is a long question with slider answer: </label>
+                    <input type="range" min="0" style="width: 80%; margin-bottom: 1em;" max="100" value="50" id="fader" step="20" list="volsettings">
+                    <datalist id="volsettings">
+                        <option>-2</option>
+                        <option>-1</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </datalist>
+                    <label for="fader">This is a long question with slider answer:  </label>
+                    <input type="range" style="width: 80%; margin-bottom: 1em;" min="0" max="100" value="50" id="fader" step="20" list="volsettings">
+                    <datalist id="volsettings">
+                        <option>-2</option>
+                        <option>-1</option>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                    </datalist>
+                  </div>
+                  <br>
+                  <a href="finalpage.html"><input style="padding: 0.5em; padding-right: 300px; padding-left: 300px; background-color: white; border: solid black 1px; color: black;" type="button" value="Submit" /></a>
+
+              </form>
+        </div>
+        <div style="background-image: url(assets/images/background.png); height: 21vh; width: 100%; position: fixed; bottom: 0;"></div>
+
+
+    </div>
+
+</body>
+</html>

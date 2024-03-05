@@ -3,103 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-alt.css">
     <title>4 in a Row</title>
 </head>
 <body>
-    <div class="container" id="allthepage">
-        <div class="right" >
-            <div class="right-content">
-                <img src="assets/images/robot1.png" alt="robot" height="300" style="margin-left: 5em;">
-                <h2 class="main-title" style=" font-size: 2.1em;">You Outperformed Robot 35!</h2>
-                <div id="playAgain"> 
-                    <h3 class="main-subtitle" style="display: inline-block; margin-right: 3em;">Wanna play again?</h3>
-                    <a class="main-subtitle" style="display: inline-block; margin-right: 3em; padding: 0.5em; background-color: white; padding-right: 1em; padding-left: 1em; border: solid black 1px; color: black; text-decoration: none;" href="https://dev.d254ocmyajhna0.amplifyapp.com/AWS%20Experiment/index.html">Yes</a>
-                    <a class="main-subtitle" style="display: inline-block; padding: 0.5em; padding-right: 1em; padding-left: 1em; background-color: white; border: solid black 1px; color: black;" onclick="showDiv()">No</a>
-                </div>
-                <div id="humans" style="display: none;">
-                    <h3 class="main-subtitle" id="repeat" style="margin-bottom: 2em;">Wanna know how well you performed compared to other humans?</h3>
-                    <a class="start" id="questions" style="margin-right: 4em; padding: 0.5em; background-color: white; border: solid black 1px; color: black;" onclick="loadQuestions()"> Fill in the Form and Get the results</a>
-                    <a class="start" id="sayNo" style="padding: 0.5em; background-color: white; border: solid black 1px; color: black;"> No Thanks</a>
-                </div>
-            </div>
+    <div class="all-page">
+        <div class="centre-left" style="background-image: url(assets/images/background.png)"></div>
+        <div class="right-alt-centre">
+            <h1 class="main-title">You Outperformed Robot 30!</h1>
+            <h3 class="main-subtitle"> Want to know what this means? Robot thirty is good at planning, compared to other robots, its performing worse in remembering its moves.</span></h3>
+            <h3 class="main-subtitle"> You think you can do better? play again.</span></h3>
+            <h3 class="main-subtitle"> If not, we would like to ask you few questions to help us better understand the results.</span></h3>
+            <a href="https://dev-backend.d4id81j7108zr.amplifyapp.com/AWS%20Experiment/dist/index.html" style="text-decoration: none; color: black;"><button class="button" >Play Again!</button></a>
+            <a href="questionnaire.html" style="text-decoration: none; color: black;"><button class="button">I'm Done</button></a>
         </div>
-        <div style="display: none; padding-right: 2em;" id="form" class="right-content">
-                <form>
-                    <div style="width: 100%;">
-                      <div style="display: grid; justify-content: space-around;   grid-template-columns: 1fr 1fr;">
-                            <label for="fname">Age:</label>
-                            <input type="number" id="fname"  style= "width: 200px; margin-bottom: 1em;" name="age" placeholder="Type Your Age">
-                            <label for="gender" class="control-label">I identify as:</label> 
-                            <select name="geners" id="gender" style="margin-bottom: 1em;"> 
-                                <option value="null">Select One</option> 
-                                <option value="male">Male</option> 
-                                <option value="Female">Female</option> 
-                                <option value="Non-Binary">Non-Binary</option> 
-                            </select>
-                            <label for="location" class="control-label">Location</label>
-                            <input type="text" id="location" style= "width: 200px; margin-bottom: 1em;" name="location">
-                            <label for="job" class="control-label" style="margin-bottom: 1em;">Does your job involve strategic decision making?</label>
-                            <div class="switch-field">
-                                <input type="radio" id="radio-one" name="switch-one" value="yes"/>
-                                <label for="radio-one" id="radio1">Yes</label>
-                                <input type="radio" id="radio-two" name="switch-one" value="no" />
-                                <label for="radio-two" id="radio2">No</label>
-                            </div>
-                            <label for="experience" class=" col-sm-3 control-label control-label" style="margin-bottom: 1em;">Are you trained in strategic decision making as part of your education?</label>
-                            <div class="switch-field">
-                                <input type="radio" id="radiounos" name="switch-two" value="yes"/>
-                                <label for="radiounos" id="radiouno">Yes</label>
-                                <input type="radio" id="radiodeuss" name="switch-two" value="no" />
-                                <label for="radiodeuss" id="radiodeus">No</label>
-                            </div>
-                            <label for="fader">This is a long question with slider answer: </label>
-                            <input type="range" style="width: 80%; margin-bottom: 1em;" min="0" max="100" value="50" id="fader" step="20" list="volsettings">
-                                <datalist id="volsettings">
-                                <option>-2</option>
-                                <option>-1</option>
-                                <option>0</option>
-                                <option>1</option>
-                                <option>2</option>
-                                </datalist>
-                        <label for="fader">This is a long question with slider answer: </label>
-                        <input type="range" min="0" style="width: 80%; margin-bottom: 1em;" max="100" value="50" id="fader" step="20" list="volsettings">
-                        <datalist id="volsettings">
-                            <option>-2</option>
-                            <option>-1</option>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                        </datalist>
-                        <label for="fader">This is a long question with slider answer:  </label>
-                        <input type="range" style="width: 80%; margin-bottom: 1em;" min="0" max="100" value="50" id="fader" step="20" list="volsettings">
-                        <datalist id="volsettings">
-                            <option>-2</option>
-                            <option>-1</option>
-                            <option>0</option>
-                            <option>1</option>
-                            <option>2</option>
-                        </datalist>
-                      </div>
-                      <br>
-                      <a href="finalpage.html"><input style="padding: 0.5em; padding-right: 300px; padding-left: 300px; background-color: white; border: solid black 1px; color: black;" type="button" value="Submit" /></a>
-
-                  </form>
-        </div>
+        <div class="bottom-centre" style="background-image: url(assets/images/background.png)"></div>
     </div>
-
-    <script>
-        function loadQuestions() {
-            document.getElementById("form").style.display = "block";
-            document.getElementById("sayNo").style.display = "none";
-            document.getElementById("questions").style.display = "none";
-            document.getElementById("repeat").style.display = "none";
-
-        }
-        function showDiv() {
-            document.getElementById("humans").style.display = "block";
-            document.getElementById("playAgain").style.display = "none";
-        }
-    </script>
 </body>
 </html>
