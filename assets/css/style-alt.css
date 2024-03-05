@@ -10,7 +10,9 @@ body {
 .index-container {
     width: 100%;
 }
-
+.invisible{
+    display: none;
+}
 .left{
     height: 8em;
     position: fixed; 
@@ -329,6 +331,9 @@ input, select, .switch-field{
     }
     .beside{
         display: grid; justify-content: space-around;   grid-template-columns: 1fr 1fr;
+    }
+    .invisible{
+        display: block;
     }
 
 }
